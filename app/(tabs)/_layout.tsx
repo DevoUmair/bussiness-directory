@@ -1,23 +1,31 @@
+import { Colors } from '@/constants/Colors';
+import { Ionicons } from '@expo/vector-icons';
 import { Tabs } from 'expo-router';
 import React from 'react';
-
 export default function TabLayout() {
   return (
     <Tabs screenOptions={{
         headerShown: false,
+        tabBarActiveTintColor:Colors.PRIMARY
     }} >
         <Tabs.Screen name='home' 
             options={{
-                tabBarLabel:'Home',
-                tabBarIcon: ({ color }) => (
-                    <svg width="24" height="24" fill={color}>
-                        <path d="M12 2L1 9h3v11h16V9h3L12 2zM5 20V9.83l7-5.33 7 5.33V20H5z"/>
-                    </svg>
-                ),
+                tabBarLabel : 'Home',
+                tabBarIcon : ({color}) => <Ionicons name='home' size={24} color={color} />
             }}
         />
-        <Tabs.Screen name='explore' />
-        <Tabs.Screen name='profile' />
+        <Tabs.Screen name='explore' 
+            options={{
+                tabBarLabel : 'Explore',
+                tabBarIcon : ({color}) => <Ionicons name='search' size={24} color={color} />
+            }}
+        />
+        <Tabs.Screen name='profile' 
+            options={{
+                tabBarLabel : 'Profile',
+                tabBarIcon : ({color}) => <Ionicons name='people-circle' size={24} color={color} />
+            }}
+        />
     </Tabs>
   )
 }
