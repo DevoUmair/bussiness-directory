@@ -7,7 +7,7 @@ import { db } from '../../config/FirebaseConfig';
 import EachCategoryLoader from '../common/EachCategoryLoader';
 import EachCategory from './EachCategory';
 
-const Category = ({reloadKey}) => {
+const Category = ({isExplore , reloadKey , onCategorySelect}) => {
   const [categoryList , setCategoryList] = useState([])
   const [loading, setLoading] = useState(true);
   const router = useRouter()
@@ -35,13 +35,16 @@ const Category = ({reloadKey}) => {
     } finally {
       setTimeout(() => {
         setLoading(false);
-      }, 2000);
+      }, 500);
     }
   }  
 
- const handleCategory = (cat) => {
-  
-    router.push('/businessList/' + cat?.name)
+  const handleCategory = (cat) => {
+    if(isExplore){
+      onCategorySelect(cat)
+    }else{
+      router.push('/businessList/' + cat?.name)
+    }
   }
 
   const renderImageItem = ({ item }) => (
@@ -49,11 +52,15 @@ const Category = ({reloadKey}) => {
   );
 
   return (
-    <View>
-      <View style={{paddingLeft:20 , paddingRight:20, paddingTop:20, marginBottom:5,  marginTop:10,display:'flex' , flexDirection:'row' , justifyContent:'space-between', alignItems:'center' }} >
-        <Text style={{fontSize:20 , fontFamily:'outfit-bold'}} >Category</Text>
-        <Text style={{fontSize:15 , fontFamily:'outfit-medium' , color:Colors.PRIMARY}} >View All</Text>
-      </View>
+    <View style={{marginTop:isExplore ? 10 : 0}} >
+      {
+        !isExplore &&(
+          <View style={{paddingLeft:20 , paddingRight:20, paddingTop:20, marginBottom:5,  marginTop:10,display:'flex' , flexDirection:'row' , justifyContent:'space-between', alignItems:'center' }} >
+            <Text style={{fontSize:20 , fontFamily:'outfit-bold'}} >Category</Text>
+            <Text style={{fontSize:15 , fontFamily:'outfit-medium' , color:Colors.PRIMARY}} >View All</Text>
+          </View>
+        )
+      }
 
       <FlatList
         data={loading ? [1, 2, 3 , 4 , 5, 6, 7, 8, ,9, 10] : categoryList}

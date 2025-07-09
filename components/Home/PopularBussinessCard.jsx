@@ -1,10 +1,12 @@
 import { Colors } from '@/constants/Colors';
-import { Image, Text, View } from 'react-native';
+import { useRouter } from 'expo-router';
+import { Image, Text, TouchableOpacity, View } from 'react-native';
 
 
 export default function PopularBussinessCard({bussiness , index , length}) {
+  const router = useRouter()
   return (
-    <View style={{ marginRight: index !== length - 1 ? 12 : 0 , padding:10,backgroundColor:'#fff' , borderRadius:10}} >
+    <TouchableOpacity onPress={() => router.push('/businessDetail/' + bussiness?.id) } style={{ marginRight: index !== length - 1 ? 12 : 0 , padding:10,backgroundColor:'#fff' , borderRadius:10}} >
        <Image 
             source={{uri:bussiness?.imageUrl}}
             style={{
@@ -25,6 +27,6 @@ export default function PopularBussinessCard({bussiness , index , length}) {
                 </View>
             </View>
       
-    </View>
+    </TouchableOpacity>
   )
 }

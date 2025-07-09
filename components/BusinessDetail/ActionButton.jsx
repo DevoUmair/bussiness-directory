@@ -1,4 +1,4 @@
-import { FlatList, Image, Linking, Text, TouchableOpacity, View } from 'react-native';
+import { FlatList, Image, Linking, Share, Text, TouchableOpacity, View } from 'react-native';
 
 export default function ActionButton({business}) {
   const actionButtons = [
@@ -30,6 +30,9 @@ export default function ActionButton({business}) {
 
   const onPressHanlde = (item) => {
     if(item?.name == 'Share'){
+        Share.share({
+          message:business?.name + "\nAddress : "+business?.address+"\nFind more details on Bussiness Directory App By Umair"
+        })
         return;
     }
     Linking.openURL(item.url)

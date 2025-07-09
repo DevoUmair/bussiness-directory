@@ -4,6 +4,7 @@ import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import * as SecureStore from 'expo-secure-store';
 import { View } from 'react-native';
+import Toast from 'react-native-toast-message';
 
 const tokenCaache = {
   async getToken(key){
@@ -42,6 +43,7 @@ export default function RootLayout() {
         <SignedOut>
           <LoginScreeen />
         </SignedOut>
+        <Toast />
       </View>
     </ClerkProvider>
   )

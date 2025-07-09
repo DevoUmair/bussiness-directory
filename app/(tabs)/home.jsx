@@ -27,7 +27,7 @@ const Home = () => {
         <>
           <Header />
           <Slider reloadKey={reloadKey} />
-          <Category reloadKey={reloadKey} />
+          <Category isExplore={false} reloadKey={reloadKey} />
           <PopulerBussiness reloadKey={reloadKey} />
           <View style={{height:20}} ></View>
         </>

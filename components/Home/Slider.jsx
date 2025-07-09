@@ -37,7 +37,7 @@ const Slider = ({ reloadKey }) => {
     } finally {
       setTimeout(() => {
         setLoading(false);
-      }, 2000);
+      }, 500);
     }
   };
 

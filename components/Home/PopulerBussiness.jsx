@@ -24,7 +24,7 @@ export default function PopulerBussiness({reloadKey}) {
 
       const data = [];
       querySnapshot.forEach((doc) => {
-        data.push(doc.data());
+        data.push({ id:doc?.id , ...doc.data()});
       });
 
       setBussinessList(data);
@@ -33,7 +33,7 @@ export default function PopulerBussiness({reloadKey}) {
     } finally {
       setTimeout(() => {
         setLoading(false);
-      }, 2000);
+      }, 500);
     }
   }  
 
