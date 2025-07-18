@@ -1,50 +1,86 @@
-# Welcome to your Expo app 👋
+# Business Directory App 📱
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a **Business Directory** mobile app built with [Expo](https://expo.dev) (React Native).  
+It allows users to explore, search, and view details of various businesses, including categories, ratings, reviews, and more.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Features
+
+- **Browse Businesses:** View a list of businesses by category.
+- **Search:** Find businesses by name or category.
+- **Business Details:** See detailed info, images, location, and contact options for each business.
+- **Categories:** Explore businesses grouped by categories.
+- **Ratings & Reviews:** Users can rate and review businesses.
+- **Add to Favorites:** (Optional, if implemented)
+- **Share:** Share business details with others.
+- **Firebase Integration:** All business data, reviews, and user info are stored in Firebase Firestore.
+- **Expo Router:** Uses file-based routing for navigation.
+
+---
+
+## 📂 Project Structure
+
+- `app/` — Main app screens and navigation (Expo Router)
+- `components/` — Reusable UI components (Home, Business Detail, Explore, etc.)
+- `config/` — Firebase and other configuration files
+- `assets/` — Images and static assets
+
+---
+
+## 🛠️ Getting Started
+
+1. **Install dependencies**
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. **Start the app**
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+   - Scan the QR code with Expo Go, or run on an emulator/simulator.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📝 Customization
 
-## Get a fresh project
+- **Firebase:**  
+  Update your Firebase config in `config/FirebaseConfig.jsx` with your own project credentials.
 
-When you're ready, run:
+- **Fonts:**  
+  This project uses custom fonts (e.g., `outfit-bold`, `outfit-regular`). Make sure to add them to your assets and link them if needed.
 
-```bash
-npm run reset-project
-```
+---
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 📸 Screenshots
 
-## Learn more
+_Add screenshots or a demo GIF here to showcase the app UI._
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 🤝 Contributing
 
-## Join the community
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## 🙋‍♂️ Author
+
+- Developed by Umair (replace with your name or GitHub profile link)
+
+---
+
+## 📚 Learn More
+
+- [Expo documentation](https://docs.expo.dev/)
+-
