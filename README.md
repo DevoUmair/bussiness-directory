@@ -58,29 +58,10 @@ It allows users to explore, search, and view details of various businesses, incl
 
 ## 📸 Screenshots
 
-_Add screenshots or a demo GIF here to showcase the app UI._
+Below are some screenshots of the app UI:
+
+![Home Screen](./assets/screenshots/home.png)
+![Explore Screen](./assets/screenshots/explore.png)
+![Business Detail](./assets/screenshots/business-detail.png)
 
 ---
-
-## 🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-## 🙋‍♂️ Author
-
-- Developed by Umair (replace with your name or GitHub profile link)
-
----
-
-## 📚 Learn More
-
-- [Expo documentation](https://docs.expo.dev/)
--

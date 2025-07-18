@@ -69,10 +69,14 @@ const explore = () => {
         {/* Bussiness List */}
         <View style={{padding:20}} >
             <FlatList 
-              data={loading ? [1,2,3,4,5,6,7,8] :bussinessList}
-              keyExtractor={(item, index) => item?.id || index.toString()}
-              renderItem={loading ? () => <BusinessCardWithRatingLoader key={index} /> : renderImageItem}
-            />
+                data={loading ? [1,2,3,4,5,6,7,8] : bussinessList}
+                keyExtractor={(item, index) => item?.id || index.toString()}
+                renderItem={
+                  loading
+                    ? ({ index }) => <BusinessCardWithRatingLoader key={index} />
+                    : renderImageItem
+                }
+              />
         </View>
       </View>
     </SafeAreaView>
