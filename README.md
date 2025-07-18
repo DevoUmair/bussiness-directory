@@ -62,7 +62,7 @@ Below are some screenshots of the app UI:
 
 ![Home Screen](./assets/screenshot/home.jpg)
 ![Explore Screen](./assets/screenshot/explore.jpg)
-![Business Detail](./assets/screenshot/single bussiness.jpg)
-![Category Bussiness](./assets/screenshot/category business.jpg)
+![Business Detail](./assets/screenshot/single-business.jpg)
+![Category Business](./assets/screenshot/category-business.jpg)
 
 ---
