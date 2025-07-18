@@ -60,9 +60,27 @@ It allows users to explore, search, and view details of various businesses, incl
 
 Below are some screenshots of the app UI:
 
-<img src="./assets/images/screenshot/home.jpg" alt="Home Screen" width="300"/>
-<img src="./assets/images/screenshot/explore.jpg" alt="Explore Screen" width="300"/>
-<img src="./assets/images/screenshot/single bussiness.jpg" alt="Business Detail" width="300"/>
-<img src="./assets/images/screenshot/category business.jpg" alt="Category Business" width="300"/>
+<table>
+  <tr>
+    <td>
+      <img src="./assets/images/screenshot/home.jpg" alt="Home Screen" width="300"/><br/>
+      <center>Home Screen</center>
+    </td>
+    <td>
+      <img src="./assets/images/screenshot/explore.jpg" alt="Explore Screen" width="300"/><br/>
+      <center>Explore Screen</center>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="./assets/images/screenshot/single bussiness.jpg" alt="Business Detail" width="300"/><br/>
+      <center>Business Detail</center>
+    </td>
+    <td>
+      <img src="./assets/images/screenshot/category business.jpg" alt="Category Business" width="300"/><br/>
+      <center>Category Business</center>
+    </td>
+  </tr>
+</table>
 
 ---
